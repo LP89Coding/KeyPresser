@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyPresser"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="KeyPresser.PressKeyDialog"
+        mc:Ignorable="d" 
+        Title="Wciśnij klawisz" Icon="Images/Keyboard.ico"
+        Height="85" Width="250" MinWidth="250" MaxWidth="250" MaxHeight="85" MinHeight="85" 
+        IsHitTestVisible="True" ResizeMode="NoResize"
+        HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid Margin="0,0,14,3">
+
+        <syncfusion:SfTextBoxExt Name="tbPresedKey" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                                 VerticalAlignment="Center" TextAlignment="Center"
+                                 Width="224" Height="35" 
+                                 Margin="10,10,-1,10" IsReadOnly="False" Focusable="True"
+                                 BorderBrush="{x:Null}" KeyDown="tbPresedKey_KeyDown"
+                                 Watermark="Wciśnij klawisz" TextChanged="tbPresedKey_TextChanged" BorderThickness="0"/>
+
+    </Grid>
+</Window>
